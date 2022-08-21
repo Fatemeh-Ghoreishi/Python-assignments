@@ -9,14 +9,14 @@ while True:
 number1 = int(input('Enter your number:'))
 
 if convert_type == 1:
-    print(int(number1 + 273.15),'Kelvin')
+    print(float(number1 + 273.15),'Kelvin')
 elif convert_type == 2:
-    print(int(number1 - 273.15),'Celsius')
+    print(float(number1 - 273.15),'Celsius')
 elif convert_type == 3:
-    print(int((number1 - 32) *5 / 9),'Celsius')
+    print(float((number1 - 32) *5 / 9),'Celsius')
 elif convert_type == 4:
-    print(int(number1 *9 / 5 +32),'Fahrenheit')
+    print(float(number1 *9 / 5 +32),'Fahrenheit')
 elif convert_type == 5:
-    print(int(((number1 - 32) *5 / 9) + 273.15),'Kelvin')
+    print(float(((number1 - 32) *5 / 9) + 273.15),'Kelvin')
 else:
-    print(int(((number1 - 273.15) *9 / 5) + 32),'Fahrenheit')
+    print(float(((number1 - 273.15) *9 / 5) + 32),'Fahrenheit')
