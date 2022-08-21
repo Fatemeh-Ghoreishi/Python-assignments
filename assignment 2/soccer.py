@@ -1,6 +1,6 @@
 win = equal = loss = total_score = counter = 0
 while counter < 8:
-    vorodi = int(input('Enter the score: '))
+    vorodi = int(input('Enter the score (win = 3),(equal = 1),(loss = 0): '))
     if ( vorodi != 0 and vorodi != 1 and vorodi != 3):
         print('Your score must be (0 for loss) or (1 for equal) or (3 for win), Please try again. ')
         continue
