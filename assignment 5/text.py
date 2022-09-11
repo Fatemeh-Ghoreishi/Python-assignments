@@ -1,0 +1,6 @@
+text = input('Enter your main text: ')
+piece = input('Enter the thing you want to slice text by it: ')
+stick = input('Enter what you want to paste with that text: ')
+text = text.split(piece)
+text = stick.join(text)
+print(text)
