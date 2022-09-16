@@ -1,3 +1,4 @@
+from posixpath import curdir
 import random
 list = [1, 2, 3]
 count = 1
@@ -17,8 +18,6 @@ while True:
     else:
         print('Please choose 1 or 2 or 3 !!')
         continue
-
-
 if player == 1:
     while True:
         while True:
@@ -46,7 +45,6 @@ if player == 1:
         print(f'\nWinner = system \nscore User: {count1}\tscore system: {count2}')
     else:
         print(f'\nWinner = User \nscore User: {count1}\tscore system: {count2}')
-
 else:
     while True:
         while True:
@@ -59,9 +57,13 @@ else:
                 continue
             elif (first_guy == 1 and second_guy == 3) or (first_guy == 3 and second_guy == 2) or (first_guy == 2 and second_guy == 1):
                 count1 += 1
+                print('score User 1 :',count1)
+                print('score User 2 :',count2)
                 break
             elif (first_guy == 3 and second_guy == 1) or (first_guy == 2 and second_guy == 3) or (first_guy == 1 and second_guy == 2):
                 count2 += 1
+                print('score User 1 :',count1)
+                print('score User 2 :',count2)
                 break
             else:
                 print('Please enter the correct option! (1 or 2 or 3)')
