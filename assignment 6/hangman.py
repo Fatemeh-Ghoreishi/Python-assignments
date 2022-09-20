@@ -56,6 +56,9 @@ while True:
                     print('Please just enter one letter!')
                     continue
             letter_user = letter_user.lower()
+            if letter_user == final_answer:
+                print('Hoora, you won :)')
+                break
             if len(letter_user) >= 2:
                 letter_user = letter_user[0]
             if letter_user in wrong_list or letter_user in show_list:
@@ -133,6 +136,9 @@ while True:
                     print('Please just enter one letter!')
                     continue
             letter_user = letter_user.lower()
+            if letter_user == final_answer:
+                print('Hoora, you won :)')
+                break
             if len(letter_user) >= 2:
                 letter_user = letter_user[0]
             if letter_user in wrong_list or letter_user in show_list:
