@@ -4,7 +4,7 @@ def math(st):
     for i in st:
         for j in range(4):
             if i == op[j]:
-                oprs.append(j)
+                oprs.append(i)
     for i in range(4):
         math = st.split(op[i])
         st = ' '.join(math)
@@ -39,7 +39,6 @@ def math(st):
             oprs.pop(count)
             count -= 1
         count += 1
-    count = 0
     print(math[0])
 st = input('Enter your math expression: ')
 math(st)
